@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://codingcorner.info/XSD/loggable.xsd">
+	<import>
+		<loggable name="project">
+			<classpath>lib/data/project/LoggableProject.class.php</classpath>
+		</loggable>
+	</import>
+	<delete>
+		<loggable name="deprecated" />
+	</delete>
+</data>

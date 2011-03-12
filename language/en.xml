@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<!-- ACP -->
+	<category name="wcf.acp.package">
+		<item name="wcf.acp.package.step.install.LoggablePackageInstallationPlugin"><![CDATA[Installing logtypes ...]]></item>
+		<item name="wcf.acp.package.step.uninstall.LoggablePackageInstallationPlugin"><![CDATA[Removing logtypes ...]]></item>
+		<item name="wcf.acp.package.step.update.LoggablePackageInstallationPlugin"><![CDATA[Updating logtypes ...]]></item>
+	</category>
+	<!-- /ACP -->
+	<category name="wcf.actionlog">
+		<item name="wcf.actionlog.guest"><![CDATA[Guest]]></item>
+	</category>
+</language>
