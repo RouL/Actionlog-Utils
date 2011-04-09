@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://codingcorner.info/XSD/loggable.xsd">
+<data xmlns="http://codingcorner.info" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://codingcorner.info http://codingcorner.info/XSD/loggable.xsd">
 	<import>
 		<loggable name="project">
 			<classpath>lib/data/project/LoggableProject.class.php</classpath>

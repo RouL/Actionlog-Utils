@@ -1,9 +1,14 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.woltlab.com"
-	targetNamespace="http://www.woltlab.com" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://codingcorner.info" 
+	targetNamespace="http://codingcorner.info" elementFormDefault="qualified">
 
-	<xs:include schemaLocation="http://www.woltlab.com/XSD/types.xsd" />
-
+	<xs:simpleType name="cc_varchar">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="255"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
 	<xs:element name="data">
 		<xs:complexType>
 			<xs:all>
@@ -28,14 +33,14 @@
 	</xs:complexType>
 
 	<xs:complexType name="loggable_delete">
-		<xs:attribute name="name" type="woltlab_varchar" use="required" />
+		<xs:attribute name="name" type="cc_varchar" use="required" />
 	</xs:complexType>
 
 	<xs:complexType name="loggable_import">
 		<xs:complexContent>
 			<xs:extension base="loggable_delete">
 				<xs:all>
-					<xs:element name="classpath" type="woltlab_varchar"
+					<xs:element name="classpath" type="cc_varchar"
 						minOccurs="1" maxOccurs="1" />
 				</xs:all>
 			</xs:extension>
